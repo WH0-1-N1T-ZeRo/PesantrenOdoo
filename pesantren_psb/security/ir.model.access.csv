@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_web_bank_manager,web_bank_manager,model_web_bank,,1,1,1,1
+access_web_biaya_daftar_manager,web_biaya_daftar_manager,model_web_biaya_daftar,,1,1,1,1
+access_web_data_daftaran_manager,web_data_daftaran_manager,model_web_data_daftaran,,1,1,1,1

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="pos_wallet_odoo.ControlButtons" t-inherit="point_of_sale.ControlButtons" t-inherit-mode="extension">
+        <xpath expr="//t[@t-if='props.showRemainingButtons']/div/OrderlineNoteButton" position="after">
+            <button t-att-disabled="!pos.get_order()?.get_selected_orderline()" 
+                class="js_discount"
+                t-att-class="buttonClass"
+                t-on-click="() => this.clickSetSubTotal()">
+                <i class="fa fa-key me-2"/>PIN Santri
+            </button>
+        </xpath>
+    </t>
+
+    <!-- <template id="inherit_payment_screen_validate" inherit_id="point_of_sale.PaymentScreenValidate">
+    <t t-name="mt_pos_subtotal_qto_qty.ControlButtons" t-inherit="point_of_sale.ControlButtons" t-inherit-mode="extension">
+        <xpath expr="//button[contains(@class, 'validation-button')]" position="replace">
+            <button class="btn-custom validation-button btn btn-danger btn-lg flex-fill py-3 lh-lg" t-att-class="{ secondary: !(currentOrder.is_paid() and currentOrder._isValidEmptyOrder()) }" t-on-click="() => this.customValidateOrder()">
+                <span>Custom Validate</span>
+            </button>
+        </xpath>
+    </t> -->
+</templates>

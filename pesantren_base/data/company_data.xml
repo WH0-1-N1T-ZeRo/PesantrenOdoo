@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data noupdate="0">
+        <!-- Company Setting -->
+        <record id="base.main_company" model="res.company">
+            <field name="name">IBS Alhamra</field>
+            <field name="email">info@ibsalhamra.sch.id</field>
+            <field name="website">https://ibsalhamra.sch.id</field>
+            <field name="street">Kompleks Masjid Salman Al Farisi</field>
+            <field name="street2">Jln. Raya Karangampel RT 08 RW 02 Desa Karang Widoro</field>
+            <field name="city">Kabupaten Malang</field>
+            <field name="phone">+6281334370101</field>
+            <field name="mobile">+6281212337616</field>
+            <field name="country_id" ref="base.id"/>
+            <field name="logo" type="base64" file="pesantren_base/static/description/alhamra.png"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,24 @@
+<odoo>
+    <menuitem 
+        id="psb_menu_root" 
+        name="Pendaftaran Santri Baru" 
+        web_icon="pesantren_psb,static/description/icon.png"/>
+
+    <menuitem 
+        id="psb_master_data" 
+        name="Master Data" 
+        parent="psb_menu_root" 
+        sequence="10"/>
+
+        <menuitem 
+            id="pengaturan_data_menu" 
+            name="Pengaturan Bank"
+            parent="psb_master_data" 
+            sequence="1"/>
+        <menuitem 
+            id="psb_bank" 
+            name="Bank" 
+            parent="pengaturan_data_menu" 
+            action="psb_bank_menu" 
+            sequence="10"/>
+</odoo>

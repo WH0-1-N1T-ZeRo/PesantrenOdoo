@@ -1,0 +1,7 @@
+<template id="psb_data_pendaftaran_template" inherit_id="website.layout">
+    <xpath expr="//main" position="inside">
+        <div id="pendaftaran">
+            <t t-call="web.data.daftaran"/>
+        </div>
+    </xpath>
+</template>

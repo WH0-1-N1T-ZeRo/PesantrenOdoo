@@ -1,0 +1,28 @@
+<odoo>
+    <data>
+        <record id="psb_bank_view" model="ir.ui.view">
+        <field name="name">psb.bank.view.list</field>
+        <field name="model">web.bank</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="nomor"/>
+                <field name="status" widget="badge"
+                options="{
+                       'green': 'aktif', 
+                       'red': 'mati'
+                   }"/>
+                <field name="penjelasan" widget="radio"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="psb_bank_menu" model="ir.actions.act_window">
+        <field name="name">Bank</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">web.bank</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    </data>
+</odoo>
